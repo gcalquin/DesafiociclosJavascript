@@ -6,14 +6,15 @@ let opcion = 0;
 const fecha = new Date();
 anioActual = fecha.getFullYear();
 
-while (opcion <= 4) {
+while (opcion <= 5) {
     // Menu //
     console.log("Menu");
     console.log("----");
     console.log("1. Comparador de Edad");
     console.log("2. Sumas aplicando For");
     console.log("3. Concatenador de Palabras usando While");
-    console.log("4. Salir");
+    console.log("4. Pruebas con case");
+    console.log("5. Salir");
     opcion = parseInt(prompt("Ingrese Opción: "));
     console.log("Usted ingreso la opcion " + opcion +"...")  
 
