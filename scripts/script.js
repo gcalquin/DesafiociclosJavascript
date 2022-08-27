@@ -1,4 +1,3 @@
-
 alert("Inicio..")
 
 let opcion = 0;
@@ -13,7 +12,7 @@ while (opcion <= 5) {
     console.log("1. Comparador de Edad");
     console.log("2. Sumas aplicando For");
     console.log("3. Concatenador de Palabras usando While");
-    console.log("4. Pruebas con case");
+    console.log("4. Pruebas con swithc case");
     console.log("5. Salir");
     opcion = parseInt(prompt("Ingrese Opción: "));
     console.log("Usted ingreso la opcion " + opcion +"...")  
@@ -55,14 +54,31 @@ while (opcion <= 5) {
       }
        
    }
+
+   
+   if (opcion == 4){
+    let op = parseInt(prompt("Que receta desea: \n 1.Asado Alemán \n 2.Piscola \n 3. Hot dog"));
+    switch(op){
+      case 1:
+        alert("El Asado alemán se hace con carne molida, huevo, pimienta y en el horno")
+      break;
+      case 2:
+        alert("La piscola solo es pisco con coca cola")
+      break;
+      case 3:
+         alert("El hotdog se hace con pan, vienesa, palta, tomate y mayonesa")
+      break;
+    }
+     
+ }
     
-     if (opcion == 4){
+     if (opcion == 5){
        alert("Adios");
       break
     }
 
-    if (opcion < 1 && opcion > 5){
-      alert("Ingrese opción correcta (1..5)...");
+    if (opcion < 1 && opcion > 6){
+      alert("Ingrese opción correcta (1..6)...");
 
    }
 
